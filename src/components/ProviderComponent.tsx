@@ -1,10 +1,9 @@
-import React from 'react';
 import './ProviderComponent.css';
 
 const Provider: React.FC = () => {
   return (
     <div className="container">
-      <div className="icon-container">
+      <div className="">
         <img
           src="https://module-federation.io/svg.svg"
           alt="logo"

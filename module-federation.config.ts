@@ -3,8 +3,11 @@ import { createModuleFederationConfig } from '@module-federation/rsbuild-plugin'
 export default createModuleFederationConfig({
   name: 'mfProductProvider',
   exposes: {
-    './ProductComponent': './src/components/ProviderComponent.tsx',
     './ProductCard': './src/components/ProductCard.tsx',
+    './ProductGrid': './src/components/ProductGrid.tsx',
+    './ProductDetails': './src/components/ProductDetails.tsx',
+    './products': './src/data/products.ts',
+    './types': './src/types/product.ts',
   },
   shared: {
     react: { singleton: true },

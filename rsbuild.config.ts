@@ -9,5 +9,16 @@ export default defineConfig({
   })],
   server: {
     port: 3002,
-  }
+  },
+  tools: {
+    postcss: (config) => {
+      config.postcssOptions = {
+        plugins: [
+          require('tailwindcss'),
+          require('autoprefixer'),
+        ],
+      };
+      return config;
+    },
+  },
 });
