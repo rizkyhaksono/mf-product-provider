@@ -1,0 +1,177 @@
+{
+  "id": "mfProductProvider",
+  "name": "mfProductProvider",
+  "metaData": {
+    "name": "mfProductProvider",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "mf-product-provider"
+    },
+    "remoteEntry": {
+      "name": "static/js/mfProductProvider.7390a9b7.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "mfProductProvider",
+    "pluginVersion": "0.16.0",
+    "prefetchInterface": false,
+    "publicPath": "/"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "mfProductProvider:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/964.56ed8bc8.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [
+        "./ProductGrid"
+      ]
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react-dom",
+      "version": "*",
+      "eager": false,
+      "id": "mfProductProvider:react-dom",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/173.d64dcf8b.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": "./ProductCard",
+      "id": "mfProductProvider:ProductCard",
+      "name": "ProductCard",
+      "requires": [],
+      "file": "src\\components\\ProductCard.tsx",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_ProductCard.426e5028.js",
+            "static/js/async/__federation_expose_ProductGrid.b4eb80cf.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      }
+    },
+    {
+      "path": "./ProductGrid",
+      "id": "mfProductProvider:ProductGrid",
+      "name": "ProductGrid",
+      "requires": [
+        "react"
+      ],
+      "file": "src\\components\\ProductGrid.tsx",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_ProductCard.426e5028.js",
+            "static/js/async/__federation_expose_ProductGrid.b4eb80cf.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      }
+    },
+    {
+      "path": "./ProductDetails",
+      "id": "mfProductProvider:ProductDetails",
+      "name": "ProductDetails",
+      "requires": [],
+      "file": "src\\components\\ProductDetails.tsx",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_ProductDetails.95a86f54.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      }
+    },
+    {
+      "path": "./products",
+      "id": "mfProductProvider:products",
+      "name": "products",
+      "requires": [],
+      "file": "src\\data\\products.ts",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_products.68ce6765.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      }
+    },
+    {
+      "path": "./types",
+      "id": "mfProductProvider:types",
+      "name": "types",
+      "requires": [],
+      "file": "src\\types\\product.ts",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_types.16212700.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      }
+    }
+  ]
+}
